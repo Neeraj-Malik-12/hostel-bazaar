@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="logo">
+        <img id= "image" src="assets/Quantum Logo.png">
+    </div>
+    <div id="name">
+    <h1>Hostel Bazaar</h1>
+    <p>Buy & Sell items inside the hostel</p>
+    </div>
+</header>
+<div>
+<section class="form-section">
+    <div id="cardTitle"><h2>Add an Item...</h2></div>
+    <form id="itemForm">
+        <label class="labelName" for="sellerName">Seller Name *</label>
+        <input type="text" id="sellerName" placeholder="Seller Name" required>
+
+        <label class="labelName" for="itmeName">Item Name *</label>
+        <input type="text" id="itemName" placeholder="e.g. Cricket Bat , Kettle " required>
+
+        <label class="labelName" for="itemPrice">Price (₹) *</label>
+        <input type="text" id="itemPrice" placeholder="e.g. 400 (₹) "  required>
+
+        <label class="labelName" for="itemDesc">Description </label>
+        <textarea id="itemDesc" placeholder="Short Description (optional)" ></textarea>
+
+        <label class="labelName" for="itemContact">Mobile Number *</label>
+        <input type="text" id="itemContact" placeholder="Your 10 digit Mobile Number" required>
+        
+        <label class="labelName" for="itemImage" >Image URL </label>
+        <input type="text" id="itemImage" placeholder="If image is on your PC, upload to imgur or free image host and paste URL.">
+
+        <button type="submit">Add Item</button>
+    </form>
+</section>
+
+<section class="items-section">
+    <h2>Items for Sale</h2>
+    <div id="itemsList" class="items-grid"></div>
+</section>
+</div>
+<footer class="foot"><div id="footerText">Made for your hostel — Owner: <strong>Neeraj Malik</strong></div></footer>
+<script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #ff0062, #00bbff, #00ecb5);
+    background-size: 450% 450%;
+    animation: gradient 10s ease infinite;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    /* background-color: #c9c9c9; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+
+#image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+header h1 {
+    color: #000000;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+header p {
+    color: #0e006c;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.form-section, .items-section {
+    max-width: 60rem;     /*set the max width of form and item section so that they won't just cover the full page */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#cardTitle{
+    margin: 10px 0;
+}
+
+.labelName{
+    font-family: cursive;
+    font-size: 17px;
+}
+
+form input, form textarea {
+    resize: none;
+    width: 100%;
+    margin: 1px 0px 20px 0px;
+    padding: 12px;
+    border: 1px solid #aaaaaa;
+    /* box-shadow: 50px 5px 10px #000000 ; */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4) ;
+    border-radius: 8px;
+}
+
+button {
+    background: #095ab7;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bolder;
+    transition-duration:  0.3s;
+}
+
+button:hover {
+    background: #297ce1;
+    font-size: 19px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.item-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.2);
+}
+
+.item-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-card h3 {
+    margin: 10px 0;
+}
+
+.contact-btn {
+    background: #28a745;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.contact-btn:hover {
+    background: #1e7b33;
+    font-size: 18px;
+}
+
+.delete-btn {
+    background: #e63946;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c71d2a;
+}
+
+.sold-btn {
+    background: #ff9f1c;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sold-btn:hover {
+    background: #e68a00;
+}
+
+.sold-badge {
+    background: #d00000;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.disabled {
+    background: gray !important;
+    cursor: not-allowed;
+}
+
+.foot{
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    text-align:center;
+    /* margin-bottom: 0px; */
+    padding:12px;
+    /* color:var(--muted); */
+    color: #000000;
+    font-size:1rem;
+    background:  linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0.8));
+    backdrop-filter: blur(4px); 
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* #footerText{
+    background: rgba(255, 255, 255 , 0.2);
+    backdrop-filter: blur(1px);
+    /* text-align: center;
+    align-items: center; */
+    /* width: 25rem; */
+    
+/* } */
+
