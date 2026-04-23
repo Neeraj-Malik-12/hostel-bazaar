@@ -6,12 +6,6 @@ Built using **HTML, CSS, JavaScript, and Firebase Firestore**.
 
 ---
 
-## Live Demo
-
-*(Add your deployment link here after hosting)*
-
----
-
 ## Screenshot
 
 ![Project Screenshot](assets/screenshot.png)
@@ -85,11 +79,3 @@ Firestore rules should be configured properly before production deployment to pr
 ## Author
 
 **Neeraj Malik**
-
-Made with dedication for hostel students.
-
----
-
-## Show Your Support
-
-Give a star if you like this project!
